@@ -53,7 +53,6 @@ public class HeightActivity extends AppCompatActivity {
                 String value = String.valueOf(progress);
                 mHeight.setText(value);
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar){}
 
