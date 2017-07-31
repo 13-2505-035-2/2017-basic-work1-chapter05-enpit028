@@ -73,6 +73,7 @@ public class HeightActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     protected void onPause() {
         super.onPause();
