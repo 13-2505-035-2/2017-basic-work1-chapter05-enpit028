@@ -73,12 +73,11 @@ public class HeightActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-        SharedPreferences pref = PreferenceManager.
-                getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = pref.edit();
-        editor.putInt(HEIGHT, Integer.parseInt(mHeight.getText().
-                toString()));
+        SharedPreferences pref=PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor=pref.edit();
+        editor.putInt(HEIGHT,Integer.parseInt(mHeight.getText().toString()));
+        editor.commit();
     }
 }
